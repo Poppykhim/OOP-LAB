@@ -1,4 +1,3 @@
-package Lab05.Ex6;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,15 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class Color {
-
-    public static final String RESET = "\u001B[0m";
-    public static final String RED = "\u001B[31m";
-    public static final String GREEN = "\u001B[32m";
-    public static final String ORANGE = "\u001B[38;5;208m";
-}
-
-public class ex6 {
+public class e6 {
 
     static final String FILE_NAME = "Files\\user.txt";
 
@@ -69,7 +60,7 @@ public class ex6 {
                     }
 
                     if (!found) {
-                        System.out.println(Color.RED + "\nUser not found, please try again..." + Color.RESET);
+                        System.out.println("\nUser not found, please try again..." + Color.RESET);
                     }
                     break;
 
@@ -92,7 +83,7 @@ public class ex6 {
 
                     lines.add(user);
                     writeLines(lines);
-                    System.out.println(Color.GREEN + "\nYou are successfully registered~" + Color.RESET);
+                    System.out.println("\nYou are successfully registered~" + Color.RESET);
                     break;
 
                 case 3:
@@ -100,7 +91,7 @@ public class ex6 {
                     break;
 
                 default:
-                    System.out.println(Color.RED + "Invalid input, please try again..." + Color.RESET);
+                    System.out.println("Invalid input, please try again..." + Color.RESET);
                     break;
             }
 

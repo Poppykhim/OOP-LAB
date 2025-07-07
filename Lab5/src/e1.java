@@ -18,7 +18,7 @@ class MyDate {
         SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
         Date d1 = format.parse(date1);
         Date d2 = format.parse(date2);
-        long diff = Math.abs(d2.getTime() - d1.getTime());
+        long diff = java.lang.Math.abs(d2.getTime() - d1.getTime());
         return diff / (1000 * 60 * 60 * 24);
     }
 
@@ -34,7 +34,7 @@ class MyDate {
 
 }
 
-public class ex1 {
+public class e1 {
 
     public static void main(String[] args) throws ParseException {
 

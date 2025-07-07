@@ -1,4 +1,3 @@
-package Lab05.Ex5;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,14 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class Color {
-
-    public static final String RESET = "\u001B[0m";
-    public static final String RED = "\u001B[31m";
-    public static final String GREEN = "\u001B[32m";
-}
-
-public class ex5 {
+public class e5 {
 
     static final String TEACHER_FILE = "Files\\teacher.txt";
     static final String STUDENT_FILE = "Files\\student.txt";
@@ -63,7 +55,7 @@ public class ex5 {
                             addSecurityguard(scanner);
                             break;
                         } else {
-                            System.out.println(Color.RED + "Invalid option, please try again..." + Color.RESET);
+                            System.out.println("Invalid option, please try again..." + Color.RESET);
                         }
                     }
                     break;
@@ -73,7 +65,7 @@ public class ex5 {
                     break;
 
                 default:
-                    System.out.println(Color.RED + "Invalid choice, please try again..." + Color.RESET);
+                    System.out.println("Invalid choice, please try again..." + Color.RESET);
                     break;
             }
         } while (choice != 3);
@@ -155,19 +147,19 @@ public class ex5 {
         List<String> linesFromTeacher = readLines(TEACHER_FILE);
         System.out.println("\n==== Teacher ====");
         for (int i = 0; i < linesFromTeacher.size(); i++) {
-            System.out.println(Color.GREEN + linesFromTeacher.get(i) + Color.RESET);
+            System.out.println(linesFromTeacher.get(i) + Color.RESET);
         }
 
         List<String> linesFromStu = readLines(STUDENT_FILE);
         System.out.println("\n==== Student ====");
         for (int i = 0; i < linesFromStu.size(); i++) {
-            System.out.println(Color.GREEN + linesFromStu.get(i) + Color.RESET);
+            System.out.println(linesFromStu.get(i) + Color.RESET);
         }
 
         List<String> linesFromSG = readLines(SECURITYGUARD_FILE);
         System.out.println("\n==== Security guard ====");
         for (int i = 0; i < linesFromSG.size(); i++) {
-            System.out.println(Color.GREEN + linesFromSG.get(i) + Color.RESET);
+            System.out.println(linesFromSG.get(i) + Color.RESET);
         }
     }
 

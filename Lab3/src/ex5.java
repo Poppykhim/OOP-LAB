@@ -1,6 +1,8 @@
 
 import java.util.Scanner;
 
+import Lab6.src.Math;
+
 class Math {
 
     static double add(double a, double b) {

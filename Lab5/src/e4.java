@@ -2,9 +2,9 @@
 import java.io.*;
 import java.util.*;
 
-public class ex4 {
+public class e4 {
 
-    static final String FILE_NAME = "Files\\data.txt";
+    static final String FILE_NAME = "data.txt";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -16,7 +16,6 @@ public class ex4 {
             System.out.print("Choose an option: ");
             int option = scanner.nextInt();
             scanner.nextLine();
-
             switch (option) {
                 case 1:
                     viewNote();
@@ -34,6 +33,7 @@ public class ex4 {
     }
 
     static void viewNote() {
+        Scanner Scanner = new Scanner(System.in);
         List<String> lines = readLines();
         System.out.println("==== View note ====");
         System.out.println("*****************************");
@@ -41,6 +41,7 @@ public class ex4 {
             System.out.printf("%d | %s\n", (i + 1), lines.get(i));
         }
         System.out.println("*****************************");
+        Scanner.nextLine();
     }
 
     static void editMenu(Scanner scanner) {

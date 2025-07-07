@@ -75,7 +75,7 @@ class Triangle extends Shape {
     }
 }
 
-public class ex3 {
+public class e3 {
 
     public static void main(String[] args) {
 
