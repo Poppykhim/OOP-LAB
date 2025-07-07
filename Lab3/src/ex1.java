@@ -13,11 +13,11 @@ class Equation {
 
     void quadraticEquation() {
         double x1, x2, x;
-        double delta = Math.pow(b, 2) - (4 * a * c);
+        double delta = b * b - (4 * a * c);
 
         if (delta > 0) {
-            x1 = (-b + Math.sqrt(delta)) / (2 * a);
-            x2 = (-b - Math.sqrt(delta)) / (2 * a);
+            x1 = (-b + java.lang.Math.sqrt(delta)) / (2 * a);
+            x2 = (-b - java.lang.Math.sqrt(delta)) / (2 * a);
 
             System.out.println("X1 = " + x1 + ", X2 = " + x2);
         } else if (delta == 0) {
